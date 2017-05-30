@@ -1,0 +1,30 @@
+{
+  "name": "rpiservotest",
+  "version": "0.0.1",
+  "description": "Very basic program to test servo functionality on Raspberry Pi",
+  "main": "servo.js",
+  "dependencies": {
+    "johnny-five": "^0.10.10",
+    "raspi-io": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadwallacehart/rpiservotest.git"
+  },
+  "keywords": [
+    "Raspberry",
+    "Pi",
+    "servo",
+    "node"
+  ],
+  "author": "Chad Wallace Hart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadwallacehart/rpiservotest/issues"
+  },
+  "homepage": "https://github.com/chadwallacehart/rpiservotest#readme"
+}
