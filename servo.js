@@ -4,8 +4,8 @@ var board = new five.Board({
   io: new Raspi()
 });
 
-let min = process.argv[2] || -90;
-let max = process.argv[3] || 270;
+let min = process.argv[2] || -80; //-80
+let max = process.argv[3] || 270; 
 
 board.on("ready", function() {
   var servo = new five.Servo({
@@ -21,7 +21,7 @@ board.on("ready", function() {
   //sweep if no arguments
   if(!process.argv[2]){
   	console.log("sweeping from " + min + " to " + max);
-	servo.sweep();
+	servo.sweep({interval:800});
 	}
   //go to max if max argument provided
   else if(process.argv[3]) {
