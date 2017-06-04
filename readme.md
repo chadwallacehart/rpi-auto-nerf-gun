@@ -37,6 +37,7 @@ Shoot any number of darts: `sudo node gun 12` - fires 12 darts
 See Adafruit's [guide](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-8-using-a-servo-motor/hardware) for hot to set this up.
 
 Note on powering - Adafruit shows an external power supply, seperate from the Raspberry Pi's. You shoud do this! I was able to do some tests powering directly from the Pi's 5V supply, but it was inconsistent and I wasn't being too safe. You can power the servo from your gun. Just put the 
+![Nerf Gun wiring](/../master/instruction_videos/nerf%20gun%20servo%20power.png?raw=true "Nerf Gun Wiring")
 
 ### Linear Actuator
 
@@ -46,6 +47,10 @@ See the [video](https://www.youtube.com/watch?v=qBHvMHJEG-M&t=1s) from Roger Rab
 
 MORE COMING SOON
 README IS A WORK IN PROGRESS
+
+### Wiring
+![Nerf Gun wiring](/../master/instruction_videos/nerf%20rebelle%20wiring.png?raw=true "Nerf Gun Wiring")
+
 
 ## Credits
 * [Johnny-Five Project](http://johnny-five.io/) & [Nodebots](http://nodebots.io/)
