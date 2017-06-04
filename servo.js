@@ -1,6 +1,6 @@
-var five = require("johnny-five");
-var Raspi = require("raspi-io");
-var board = new five.Board({
+const five = require("johnny-five");
+const Raspi = require("raspi-io");
+const board = new five.Board({
   io: new Raspi()
 });
 
@@ -29,7 +29,7 @@ board.on("ready", function() {
   	setTimeout(()=>
 	  {
 		console.log("Ending at " + max);
-		servo.max()
+		servo.max();
 		process.exit();
 
 	  }, 500);
