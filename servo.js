@@ -1,14 +1,14 @@
 const five = require("johnny-five");
 const Raspi = require("raspi-io");
 const board = new five.Board({
-  io: new Raspi()
+  io: new Raspi({includePins :['P1-12']})
 });
 
 let min = process.argv[2] || -80; //-80
 let max = process.argv[3] || 270; 
 
 board.on("ready", function() {
-  var servo = new five.Servo({
+  let servo = new five.Servo({
 	pin: "P1-12",
 	range: [min,max],
 	startAt: min

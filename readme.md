@@ -1,5 +1,7 @@
 # Automatic Nerf Gun using a Rapsberry Pi
 
+Make a software controlled Nerf Gun using a Raspberry Pi, a servo, and some 3D printed parts.
+
 What you'll need:
 * Nerf Revelle Rapid Red Blaster - <$12 on [Amazon](https://www.amazon.com/Nerf-Rebelle-Rapid-Red-Blaster/dp/B00INZO30M/ref=sr_1_2?s=toys-and-games&ie=UTF8&qid=1496580017&sr=1-2&keywords=nerf+rebelle)
 * Raspberry Pi with one of the PCM GPIO pins available
@@ -11,24 +13,26 @@ What you'll need:
 
 ## Software
 
-## Installation
+### Installation
 
 ```
 git clone https://github.com/chadwallacehart/rpi-auto-nerf-gun.git
 cd rpi-auto-nerf-gun
 npm install
-
 ```
 
 ### Servo.js
 
 Set the servo to a minimum value: `sudo node servo -40` - where the enumber is the minimum value
+
 Set the servo to a min value and then max: `sudo node servo -40 270` - first parameter is min, second is max
+
 Sweep the servo between whatever min and max value is in the code: `sudo node servo`
 
 ### gun.js
 
 Shoot one bullet: `sudo node gun`
+
 Shoot any number of darts: `sudo node gun 12` - fires 12 darts
 
 ## Hardware setup
@@ -36,8 +40,12 @@ Shoot any number of darts: `sudo node gun 12` - fires 12 darts
 ### Servo
 See Adafruit's [guide](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-8-using-a-servo-motor/hardware) for hot to set this up.
 
-Note on powering - Adafruit shows an external power supply, seperate from the Raspberry Pi's. You shoud do this! I was able to do some tests powering directly from the Pi's 5V supply, but it was inconsistent and I wasn't being too safe. You can power the servo from your gun. Just put the 
-![Nerf Gun wiring](/../master/instruction_videos/nerf%20gun%20servo%20power.png?raw=true "Nerf Gun Wiring")
+_Note on powering_
+
+Adafruit shows an external power supply, seperate from the Raspberry Pi's. 
+You shoud do this! I was able to do some tests powering directly from the Pi's 5V supply, but it was inconsistent and I wasn't being too safe. 
+You can power the servo from your gun. Once you have your gun open (see below), use some aligator clips to power off of the nerf gun's batteries as shown here:
+![Nerf Gun wiring](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/nerf%20gun%20servo%20power.png?raw=true "Nerf Gun Wiring")
 
 ### Linear Actuator
 
@@ -49,7 +57,7 @@ MORE COMING SOON
 README IS A WORK IN PROGRESS
 
 ### Wiring
-![Nerf Gun wiring](/../master/instruction_videos/nerf%20rebelle%20wiring.png?raw=true "Nerf Gun Wiring")
+![Nerf Gun wiring](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/nerf%20gun%20servo%20power.png "Powering the servo from the nerf gun")
 
 
 ## Credits

@@ -1,7 +1,7 @@
 const five = require("johnny-five");
 const Raspi = require("raspi-io");
 const board = new five.Board({
-    io: new Raspi()
+    io: new Raspi({includePins :['P1-12', 'GPIO12']})   //only init needed pins
 });
 
 let min = -40,
