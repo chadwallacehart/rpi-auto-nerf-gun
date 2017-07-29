@@ -56,7 +56,7 @@ You can power the servo from your gun. Once you have your gun open (see below), 
 
 See this [video](https://www.youtube.com/watch?v=qBHvMHJEG-M&t=1s) from Roger Rabbit of this in action.
 
-You will need to 3d print this piece and fit it inside the gun.
+You will need to 3d print this component and fit it inside the gun.
 
 #### 3D printing parts
 
@@ -72,20 +72,20 @@ You want to adjust the servo gear position so that it provides the maximum exten
 To do this, take apart the linear relay piece so you just see the gear.
 
 First find the minimum range. Run `sudo node servo n` with a range of values starting with 0.  
-Keep decreasing _n_ until the decreasing the value makes no difference. For me this was '-40'. Mark this point
+Keep decreasing _n_ until the decreasing the value makes no difference. For me this was `-40`. Mark this point.
 
-![Servo adjustment - minimum](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/servo%20min%20measurement.png?raw=true "Find the servo minimium")
+![Servo adjustment - minimum](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/servo%20min%20measurement.jpg?raw=true "Find the servo minimium")
 
 
-Repeat this step to find the maximim range. Mine was `280`.
+Repeat this step to find the maximum range. Mine was `280`.
 
-![Servo adjustment - maximum](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/servo%20max%20measurement.png?raw=true "Find the servo maximum")
+![Servo adjustment - maximum](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/servo%20max%20measurement.jpg?raw=true "Find the servo maximum")
 
 
 After you find the maximum, make sure to reset the servo to its minimum point before re-assembling the linear servo.
 When you are done you should have about a 38mm / 1.5 inch range.
 
-![Adjusting to achieve the maximum linear servo range](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/linear%20actuator%20full%20range.png?raw=true "Test the servo to make sure you have the full range")
+![Adjusting to achieve the maximum linear servo range](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/linear%20actuator%20full%20range.jpg?raw=true "Test the servo to make sure you have the full range")
 
 
 Make sure to test the full range of motion many times before proceeding. 
@@ -133,7 +133,7 @@ Put the opposite gun cover on.
 
 The tape should stick in the right place. Use this as a template to cut a hole.
 
-![Cut a whole for the servo](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/servo%20hole%20template.png?raw=true "Use tape to make a template before cuttong a hole")
+![Cut a whole for the servo](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/servo%20hole%20template.jpg?raw=true "Use tape to make a template before cuttong a hole")
 
 
 Lastly you should be able to put the entire gun back together.
@@ -141,15 +141,16 @@ Make sure you keep testing the linear actuator alignment.
 
 #### Assembled photo without cover
 
-![Nerf Gun wiring](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/nerf%20refebelle%20assembly.png?raw=true "Nerf Gun Wiring")
+![Nerf Gun wiring](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/nerf%20rebelle%20assembly.png?raw=true "Nerf Gun Assembly")
 
 
 ## Credits
 * [Johnny-Five Project](http://johnny-five.io/) & [Nodebots](http://nodebots.io/)
 * [Roger Rabbit](https://github.com/tscha70) for his outstanding [Linear Servo designs](https://github.com/tscha70/3DPrinterSTLFiles)
 
-## Roadmap
+## Roadmap & To DO
 
+- Make a video to better illustrate wiring & assembly
 - Fix the linear servo piston head to mach the curved profile of the original piston head
 - Investigate resizing the servo to better fit in the gun
 - Use something other than j5's `servo.sweep` to see if it is possible to fire faster
