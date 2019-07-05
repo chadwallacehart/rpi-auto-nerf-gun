@@ -38,7 +38,7 @@ Shoot any number of darts: `sudo node gun 12` - fires 12 darts
 ## Hardware setup
 
 ### Servo Wiring
-See Adafruit's [guide](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-8-using-a-servo-motor/hardware) for hot to set this up.
+See Adafruit's [guide](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-8-using-a-servo-motor/hardware) for how to set this up.
 
 ![Servo Setup](https://github.com/chadwallacehart/rpi-auto-nerf-gun/blob/master/instruction_photos/rpi%20servo%20wiring.jpg?raw=true "Servo wiring")
 
